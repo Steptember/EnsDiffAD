@@ -1,0 +1,39 @@
+
+#type: args
+
+train:
+  epochs: 1
+  batch_size: 16
+  lr: 1.0e-3
+
+diffusion:
+  layers: 4 
+  channels: 64 
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 50
+  schedule: "quad"
+  itransformer:
+    seq_len: 100
+    pred_len: 100
+    output_attention: "store_ture"
+    use_norm: false
+    d_model: 512
+    embed: "timeF"
+    freq: "h"
+    dropout: 0.1
+    class_strategy: "projection"
+    factor: 1
+    n_heads: 8
+    d_ff: 2048
+    activation: "gelu"
+    e_layers: 1
+
+
+model:
+  is_unconditional: 0
+  timeemb: 128
+  featureemb: 16
+  target_strategy: "random"
