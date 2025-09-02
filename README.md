@@ -50,16 +50,3 @@ python ensemble_proper.py --dataset_name MSL
 ```
 
 you can check the result in ensemble_residual.
-
-# Cite this work
-
-If you use this work, please cite using the following bibtex entry.
-
-```markdown
-@article{chen2023imdiffusion,
-title={ImDiffusion: Imputed Diffusion Models for Multivariate Time Series Anomaly Detection},
-author={Chen, Yuhang and Zhang, Chaoyun and Ma, Minghua and Liu, Yudong and Ding, Ruomeng and Li, Bowen and He, Shilin and Rajmohan, Saravan and Lin, Qingwei and Zhang, Dongmei},
-journal={arXiv preprint arXiv:2307.00754},
-year={2023}
-}
-```
